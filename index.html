@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BUSIJON - Linjat e autobusëve në Shqipëri</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🚌 BUSIJON</h1>
+    <p>Gjej autobusin tënd në Shqipëri</p>
+</header>
+
+
+<section class="search-box">
+
+<h2>Kërko udhëtimin</h2>
+
+<select id="nisja">
+<option value="">Nga</option>
+<option>Tiranë</option>
+<option>Gjirokastër</option>
+<option>Sarandë</option>
+<option>Vlorë</option>
+<option>Korçë</option>
+</select>
+
+
+<select id="destinacioni">
+<option value="">Për</option>
+<option>Tiranë</option>
+<option>Gjirokastër</option>
+<option>Sarandë</option>
+<option>Vlorë</option>
+<option>Korçë</option>
+</select>
+
+
+<button onclick="kerko()">Kërko</button>
+
+</section>
+
+
+<section id="rezultatet">
+
+<h2>Linjat</h2>
+
+<div class="card">
+<h3>Tiranë → Gjirokastër</h3>
+<p>🕒 07:00 | 09:30 | 13:00 | 16:00</p>
+<p>💶 1000 Lek</p>
+<p>📞 Kontakto kompaninë</p>
+</div>
+
+
+<div class="card">
+<h3>Tiranë → Sarandë</h3>
+<p>🕒 05:30 | 09:00 | 14:00</p>
+<p>💶 1500 Lek</p>
+<p>📞 Kontakto kompaninë</p>
+</div>
+
+</section>
+
+
+<footer>
+<p>© 2026 BUSIJON</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
