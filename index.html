@@ -26,11 +26,12 @@
 <nav>
 
 <button onclick="showSection('bus')">🚌 Bus</button>
+
 <button onclick="showSection('taxi')">🚕 Taxi</button>
+
 <button onclick="showSection('emergency')">🔧 Car Emergency</button>
 
 </nav>
-
 
 </header>
 
@@ -38,7 +39,6 @@
 
 
 <section class="search-box">
-
 
 <h2>🔎 Find your trip</h2>
 
@@ -55,9 +55,7 @@
 <option>Himarë</option>
 <option>Ksamil</option>
 
-
 </select>
-
 
 
 
@@ -73,7 +71,6 @@
 <option>Himarë</option>
 <option>Ksamil</option>
 
-
 </select>
 
 
@@ -82,9 +79,7 @@
 
 
 <button onclick="kerko()">
-
 Search
-
 </button>
 
 
@@ -96,13 +91,11 @@ Search
 
 <section id="bus">
 
-
 <h2>🚌 Available buses</h2>
 
 
 
 <div class="card">
-
 
 <h3>Tiranë → Gjirokastër</h3>
 
@@ -112,13 +105,9 @@ Search
 
 <p>⭐ 4.8</p>
 
-
 <button onclick="rezervo('Tiranë - Gjirokastër')">
-
 Rezervo tani
-
 </button>
-
 
 </div>
 
@@ -127,7 +116,6 @@ Rezervo tani
 
 
 <div class="card">
-
 
 <h3>Tiranë → Sarandë</h3>
 
@@ -137,21 +125,17 @@ Rezervo tani
 
 <p>⭐ 4.7</p>
 
-
 <button onclick="rezervo('Tiranë - Sarandë')">
-
 Rezervo tani
-
 </button>
-
 
 </div>
 
 
 
 
-<div class="card">
 
+<div class="card">
 
 <h3>Tiranë → Përmet</h3>
 
@@ -161,19 +145,15 @@ Rezervo tani
 
 <p>⭐ 4.9</p>
 
-
 <button onclick="rezervo('Tiranë - Përmet')">
-
 Rezervo tani
-
 </button>
-
 
 </div>
 
 
-
 </section>
+
 
 
 
@@ -202,8 +182,8 @@ Rezervo tani
 
 
 
-<section id="emergency">
 
+<section id="emergency">
 
 <h2>🔧 Car Emergency</h2>
 
@@ -220,11 +200,45 @@ Rezervo tani
 
 <p>📞 +355688229769</p>
 
+</div>
+
+</section>
+
+
+
+
+
+
+<div id="bookingForm" class="booking-box" style="display:none;">
+
+
+<h2>🚌 Rezervo udhëtimin</h2>
+
+
+<p id="tripName"></p>
+
+
+<input type="text" id="emri" placeholder="Emri dhe Mbiemri">
+
+
+<input type="text" id="telefoni" placeholder="Numri i telefonit">
+
+
+<input type="email" id="email" placeholder="Email">
+
+
+<input type="number" id="persona" placeholder="Numri i personave">
+
+
+<button onclick="dergoRezervimin()">
+
+Dërgo rezervimin
+
+</button>
+
 
 </div>
 
-
-</section>
 
 
 
@@ -236,29 +250,8 @@ Rezervo tani
 
 <p>Explore South Albania easier</p>
 
-
 </footer>
-<div id="bookingForm" class="booking-box" style="display:none;">
 
-<h2>🚌 Rezervo udhëtimin</h2>
-
-<p id="tripName"></p>
-
-<input type="text" id="emri" placeholder="Emri dhe Mbiemri">
-
-<input type="text" id="telefoni" placeholder="Numri i telefonit">
-
-<input type="email" id="email" placeholder="Email">
-
-<input type="number" id="persona" placeholder="Numri i personave">
-
-
-<button onclick="dergoRezervimin()">
-Dërgo rezervimin
-</button>
-
-
-</div>
 
 
 
