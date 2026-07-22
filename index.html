@@ -1,90 +1,133 @@
 <!DOCTYPE html>
 <html lang="sq">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BUSIJON - Transport & Road Assistance Albania</title>
+<title>BUSIJON - Travel South Albania</title>
 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
+
 <body>
+
 
 <header>
 
 <h1>🚌 BUSIJON</h1>
 
-<p>
-Your travel and road assistance guide in Albania
-</p>
+<p>Book your bus ticket in South Albania</p>
+
 
 <nav>
+
 <button onclick="showSection('bus')">🚌 Bus</button>
 <button onclick="showSection('taxi')">🚕 Taxi</button>
 <button onclick="showSection('emergency')">🔧 Car Emergency</button>
+
 </nav>
+
 
 </header>
 
 
 
+
 <section class="search-box">
 
-<h2>🔎 Kërko udhëtimin</h2>
+
+<h2>🔎 Find your trip</h2>
 
 
 <select id="nisja">
 
-<option value="">Nga</option>
+<option value="">From</option>
+
 <option>Tiranë</option>
 <option>Gjirokastër</option>
 <option>Sarandë</option>
+<option>Përmet</option>
 <option>Vlorë</option>
-<option>Korçë</option>
+<option>Himarë</option>
+<option>Ksamil</option>
+
 
 </select>
+
 
 
 
 <select id="destinacioni">
 
-<option value="">Për</option>
+<option value="">To</option>
+
 <option>Tiranë</option>
 <option>Gjirokastër</option>
 <option>Sarandë</option>
+<option>Përmet</option>
 <option>Vlorë</option>
-<option>Korçë</option>
+<option>Himarë</option>
+<option>Ksamil</option>
+
 
 </select>
 
 
-<button onclick="kerko()">Kërko</button>
+
+<input type="date" id="data">
+
+
+<button onclick="kerko()">
+
+Search
+
+</button>
+
 
 </section>
 
 
 
+
+
 <section id="bus">
 
-<h2>🚌 Linjat e autobusëve</h2>
+
+<h2>🚌 Available buses</h2>
+
 
 
 <div class="card">
 
+
 <h3>Tiranë → Gjirokastër</h3>
 
-<p>🕒 07:00 | 09:30 | 13:00 | 16:00</p>
+<p>🕒 07:00 | 09:30 | 13:00</p>
 
 <p>💶 1000 Lek</p>
 
-<p>📞 Kontakto kompaninë</p>
+<p>⭐ 4.8</p>
+
+
+<button onclick="rezervo('Tiranë - Gjirokastër')">
+
+Rezervo tani
+
+</button>
+
 
 </div>
 
 
 
+
+
 <div class="card">
+
 
 <h3>Tiranë → Sarandë</h3>
 
@@ -92,35 +135,69 @@ Your travel and road assistance guide in Albania
 
 <p>💶 1500 Lek</p>
 
-<p>📞 Kontakto kompaninë</p>
+<p>⭐ 4.7</p>
+
+
+<button onclick="rezervo('Tiranë - Sarandë')">
+
+Rezervo tani
+
+</button>
+
 
 </div>
 
 
+
+
+<div class="card">
+
+
+<h3>Tiranë → Përmet</h3>
+
+<p>🕒 08:00 | 12:30 | 16:30</p>
+
+<p>💶 800 Lek</p>
+
+<p>⭐ 4.9</p>
+
+
+<button onclick="rezervo('Tiranë - Përmet')">
+
+Rezervo tani
+
+</button>
+
+
+</div>
+
+
+
 </section>
+
 
 
 
 
 <section id="taxi">
 
-<h2>🚕 Taxi Albania</h2>
+<h2>🚕 Taxi South Albania</h2>
 
 
 <div class="card">
 
-<h3>Taxi Tirana</h3>
+<h3>Airport Transfer</h3>
 
-<p>📍 Tirana</p>
+<p>📍 Tirana - South Albania</p>
 
-<p>📞 +355 XX XXX XXXX</p>
-
-<p>🚗 Airport Transfer</p>
+<p>📞 +355688229769</p>
 
 </div>
 
 
 </section>
+
+
 
 
 
@@ -135,13 +212,14 @@ Your travel and road assistance guide in Albania
 
 <h3>Road Assistance</h3>
 
-<p>🛠 Mekanik</p>
+<p>🛠 Mechanic</p>
 
-<p>🛞 Gomisteri</p>
+<p>🛞 Tire Service</p>
 
-<p>🚚 Karrotrec</p>
+<p>🚚 Tow Truck</p>
 
-<p>📞 Call Now</p>
+<p>📞 +355688229769</p>
+
 
 </div>
 
@@ -151,20 +229,23 @@ Your travel and road assistance guide in Albania
 
 
 
+
 <footer>
 
 <p>© 2026 BUSIJON</p>
 
-<p>
-Move around Albania easier
-</p>
+<p>Explore South Albania easier</p>
+
 
 </footer>
 
 
 
+
+
+<script src="data.js"></script>
+
 <script src="script.js"></script>
-  script src="data.js"></script>
 
 
 </body>
