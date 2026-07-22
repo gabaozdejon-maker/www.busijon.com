@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BUSIJON - Linjat e autobusëve në Shqipëri</title>
+<title>BUSIJON - Transport & Road Assistance Albania</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -12,32 +12,50 @@
 <body>
 
 <header>
-    <h1>🚌 BUSIJON</h1>
-    <p>Gjej autobusin tënd në Shqipëri</p>
+
+<h1>🚌 BUSIJON</h1>
+
+<p>
+Your travel and road assistance guide in Albania
+</p>
+
+<nav>
+<button onclick="showSection('bus')">🚌 Bus</button>
+<button onclick="showSection('taxi')">🚕 Taxi</button>
+<button onclick="showSection('emergency')">🔧 Car Emergency</button>
+</nav>
+
 </header>
+
 
 
 <section class="search-box">
 
-<h2>Kërko udhëtimin</h2>
+<h2>🔎 Kërko udhëtimin</h2>
+
 
 <select id="nisja">
+
 <option value="">Nga</option>
 <option>Tiranë</option>
 <option>Gjirokastër</option>
 <option>Sarandë</option>
 <option>Vlorë</option>
 <option>Korçë</option>
+
 </select>
 
 
+
 <select id="destinacioni">
+
 <option value="">Për</option>
 <option>Tiranë</option>
 <option>Gjirokastër</option>
 <option>Sarandë</option>
 <option>Vlorë</option>
 <option>Korçë</option>
+
 </select>
 
 
@@ -46,34 +64,108 @@
 </section>
 
 
-<section id="rezultatet">
 
-<h2>Linjat</h2>
+<section id="bus">
+
+<h2>🚌 Linjat e autobusëve</h2>
+
 
 <div class="card">
+
 <h3>Tiranë → Gjirokastër</h3>
+
 <p>🕒 07:00 | 09:30 | 13:00 | 16:00</p>
+
 <p>💶 1000 Lek</p>
+
 <p>📞 Kontakto kompaninë</p>
+
 </div>
+
 
 
 <div class="card">
+
 <h3>Tiranë → Sarandë</h3>
+
 <p>🕒 05:30 | 09:00 | 14:00</p>
+
 <p>💶 1500 Lek</p>
+
 <p>📞 Kontakto kompaninë</p>
+
 </div>
+
 
 </section>
 
 
+
+
+<section id="taxi">
+
+<h2>🚕 Taxi Albania</h2>
+
+
+<div class="card">
+
+<h3>Taxi Tirana</h3>
+
+<p>📍 Tirana</p>
+
+<p>📞 +355 XX XXX XXXX</p>
+
+<p>🚗 Airport Transfer</p>
+
+</div>
+
+
+</section>
+
+
+
+
+<section id="emergency">
+
+
+<h2>🔧 Car Emergency</h2>
+
+
+<div class="card">
+
+<h3>Road Assistance</h3>
+
+<p>🛠 Mekanik</p>
+
+<p>🛞 Gomisteri</p>
+
+<p>🚚 Karrotrec</p>
+
+<p>📞 Call Now</p>
+
+</div>
+
+
+</section>
+
+
+
+
 <footer>
+
 <p>© 2026 BUSIJON</p>
+
+<p>
+Move around Albania easier
+</p>
+
 </footer>
+
 
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
