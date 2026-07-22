@@ -113,4 +113,30 @@ behavior:"smooth"
 });
 
 
+}function rezervo(udhetimi){
+
+let emri = prompt("Shkruaj emrin dhe mbiemrin:");
+
+let telefoni = prompt("Numri i telefonit:");
+
+let persona = prompt("Sa persona udhëtojnë?");
+
+
+if(emri=="" || telefoni==""){
+
+alert("Plotëso të dhënat");
+return;
+
+}
+
+
+alert(
+"Rezervimi u dërgua!\n\n"+
+"Udhëtimi: "+udhetimi+
+"\nEmri: "+emri+
+"\nTelefon: "+telefoni+
+"\nPersona: "+persona
+);
+
+
 }
